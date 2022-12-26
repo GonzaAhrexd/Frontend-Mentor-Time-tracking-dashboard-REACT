@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Time-tracking-dashboard-REACT/static/css/main.12275e74.css",
+    "main.js": "/Frontend-Mentor-Time-tracking-dashboard-REACT/static/js/main.512ca52a.js",
+    "index.html": "/Frontend-Mentor-Time-tracking-dashboard-REACT/index.html",
+    "main.12275e74.css.map": "/Frontend-Mentor-Time-tracking-dashboard-REACT/static/css/main.12275e74.css.map",
+    "main.512ca52a.js.map": "/Frontend-Mentor-Time-tracking-dashboard-REACT/static/js/main.512ca52a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12275e74.css",
+    "static/js/main.512ca52a.js"
+  ]
+}
