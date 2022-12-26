@@ -1,20 +1,44 @@
 import React from 'react'
 import '../css/index.css'
-import Jeremy from '../images/image-jeremy.png'
-function UserTable() {
-  return (
+function UserTable(props) {
 
+
+  const change = (displayType) =>{
+    // console.log(displayType)
+    props.changeDisplay(displayType)
+  }
+ 
+  return (
+ 
     <div className='UserComplete'>
 
     <div className='username'>
-    <div >
-    <img className='imagen' src={Jeremy} alt="" />
+      <div className='usernameContent'>
+    <div className='imageContainer'>
+    <img className='imagen' src={props.img} alt="" />
+    </div>
+    <div className='rep'>
+      Report  for
+    </div>
+    <div className='name'>
+      {props.name}
+    </div>
     </div>
     </div>
 
-<div className='changeInfo'>
+    <div className='changeInfo'>
 
-</div>
+    <div className='separate'>
+      <a onClick={change('daily')}>Daily</a>
+    </div>
+    <div className='separate'>
+      <a onClick={change('weekly')}>Weekly</a>
+    </div>
+    <div className='separate'>
+      <a onClick={change('monthly')}>Monthly</a>
+    </div>
+    
+    </div>
     </div>
   )
 }

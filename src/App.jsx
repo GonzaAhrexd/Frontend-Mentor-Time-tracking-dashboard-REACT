@@ -1,23 +1,37 @@
 import UserTable from './components/UserTable';
+import CategoriesTab from './components/CategoriesTab';
 import './css/index.css';
-
+import datos from './data.json'
+import { useState } from 'react';
 function App() {
 
+  const [display,setDisplay] = useState('weekly')
 
+  const changeDisplay = (display) =>{
+    console.log(display)
+    // setDisplay('daily')
+    // setDisplay('weekly')
+    // setDisplay(display)
+  }
 
   return (
     <div className='container'>
-      <div className='dashboard'> 
-      <div className='User'>
-      <UserTable></UserTable>
-      </div>
-      <div className='info'>
+      <div className='dashboard'>
+        <div className='User'>
+          <UserTable changeDisplay={changeDisplay} img="./images/image-jeremy.png" name="Jeremy Robson"></UserTable>
+        </div>
+        <div className='info categorias'>
+          {datos.map(dato => {
+            return (
+              <div>
+                <CategoriesTab dato={dato} display={display}></CategoriesTab>
+              </div>
+            )
+          })}
+        </div>
 
       </div>
-     </div>
-     <script src="/js/tamaño.js">
-      
-     </script>
+
     </div>
   );
 }
