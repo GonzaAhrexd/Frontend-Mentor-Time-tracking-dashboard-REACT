@@ -7,11 +7,12 @@ function App() {
 
   const [display,setDisplay] = useState('weekly')
 
-  const changeDisplay = (display) =>{
-    console.log(display)
-    // setDisplay('daily')
-    // setDisplay('weekly')
-    // setDisplay(display)
+  const changeDisplay = (disp) =>{
+    const anterior = document.getElementById(display)
+    anterior.style.color = 'hsl(236, 100%, 87%)';
+    setDisplay(disp)
+    const seleccionado = document.getElementById(disp)
+    seleccionado.style.color = 'white'
   }
 
   return (

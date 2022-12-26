@@ -4,10 +4,22 @@ import styled from 'styled-components'
 function CategoriesTab(props) {
 
 
-    const Decoration = styled.button`
+    const Tarjetitas = styled.div
+    `
+    background-color: ${props.dato.color};
+    height: 90%;
+    width: 85%;
+    // background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    `
+    
+    const Decoration = styled.div`
     height: 20%;
     width: 100%;
-    background-color: ${props.dato.color};
+    // background-color: ${props.dato.color};
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
     `;
 
     var showCurrent
@@ -28,38 +40,41 @@ function CategoriesTab(props) {
     console.log(showPrevious)
     return (
 
+       
+        <Tarjetitas> 
 
+            {/* <div className='Datos'> */}
 
-        <div className='Datos'>
+            <Decoration>
+                <div>
+                    <img className="imagenDeco" src={`./images/icon-${(props.dato.title).toLowerCase()}.svg`} alt="" /> </div>
+            </Decoration>
 
-            <div className='decoration'>
-
-            </div>
-
-            <Decoration> </Decoration>
-
-            <div className='information'>
-                <div className='category'>
-                    <div className='title'>
-                        {props.dato.title}
+                <div className='information'>
+               
+                    <div className='category'>
+                        <div className='title'>
+                            {props.dato.title}
+                        </div>
+                        <div>
+                            <img src="./images/icon-ellipsis.svg" alt="" />
+                        </div>
                     </div>
-                    <div>
-                        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd" /></svg>
-
+                    <div className='hours'>
+                        {showCurrent}hrs
                     </div>
+                    <div className='lasthours'>
+
+                        Last-week - {showPrevious}hrs
+                    </div>
+                   
                 </div>
-                <div className='hours'>
-                    {showCurrent}hrs
-                </div>
-                <div className='lasthours'>
-
-                    Last-week - {showPrevious}
-                </div>
-            </div>
 
 
+         
+        {/* </div> */}
 
-        </div>
+        </Tarjetitas>
     )
 }
 

@@ -2,16 +2,10 @@ import React from 'react'
 import '../css/index.css'
 function UserTable(props) {
 
-
-  const change = (displayType) =>{
-    // console.log(displayType)
-    props.changeDisplay(displayType)
-  }
  
   return (
  
     <div className='UserComplete'>
-
     <div className='username'>
       <div className='usernameContent'>
     <div className='imageContainer'>
@@ -29,13 +23,13 @@ function UserTable(props) {
     <div className='changeInfo'>
 
     <div className='separate'>
-      <a onClick={change('daily')}>Daily</a>
+      <a id="daily" onClick={() => props.changeDisplay('daily')}>Daily</a>
     </div>
     <div className='separate'>
-      <a onClick={change('weekly')}>Weekly</a>
+      <a id="weekly" onClick={() => props.changeDisplay('weekly')}>Weekly</a>
     </div>
     <div className='separate'>
-      <a onClick={change('monthly')}>Monthly</a>
+      <a id="monthly" onClick={() => props.changeDisplay('monthly')}>Monthly</a>
     </div>
     
     </div>

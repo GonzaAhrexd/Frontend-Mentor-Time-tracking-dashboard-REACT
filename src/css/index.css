@@ -20,14 +20,11 @@ html, body {
   color: white;
 }
 .User{
-  
-  height: 75%;
-  margin-top: 150px;
-  margin-bottom: 150px;
+ height: 80%;
 }
 .UserComplete{
   background-color: hsl(235, 46%, 20%);
-  height: 100%;
+  height: 96%;
   width: 15.625rem;
   border-radius: 20px;
 
@@ -40,9 +37,10 @@ html, body {
 }
 .imagen{
   margin-top: 20px;
-  width: 70px;
+  /* width: 70px; */
+  width: 10vh;
   border: 5px solid;
-  border-radius: 55px;
+  border-radius: 7vh;
 }
 .rep{
   font-family: 'Rubik', sans-serif;
@@ -53,7 +51,7 @@ html, body {
 .name{
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 5vh;
   align-items: center;
   align-content: center;
 }
@@ -68,7 +66,7 @@ html, body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   margin: 1.5625rem;
-  font-size: 18px;
+  font-size: 2vh;
 }
 .separate{
   margin-bottom: 20px;
@@ -78,6 +76,7 @@ html, body {
 .separate:hover{
   color: white;
 }
+
 
 .info{
   margin-top: 45px;
@@ -111,10 +110,18 @@ html, body {
 }
 
 .information{
-  margin: 25px;
+
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  height: 70%;
+  border-radius: 20px;
+  padding: 40px 40px 0px 40px;
 }
 
-
+.information:hover{
+  cursor: pointer;
+  background-color: hsl(237, 38%, 30%);
+}
 .category{
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
@@ -125,11 +132,19 @@ html, body {
 
 .hours{
   font-family: 'Rubik', sans-serif;
-  font-size: 48px;
+  font-size: 4vw;
 
 }
 .lasthours{
   font-family: 'Rubik', sans-serif;
-  font-size: 18px;
+  font-size: 1vw;
   color: hsl(236, 100%, 87%);
+}
+
+.imagenDeco{
+  position: relative;
+  bottom: 5px;
+  top: 5px;
+  width: 100%;
+  
 }
