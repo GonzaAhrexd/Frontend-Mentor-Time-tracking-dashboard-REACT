@@ -30,11 +30,11 @@ Users should be able to:
 
 <div>
 <img src="https://cdn.discordapp.com/attachments/1010370602516877386/1057069885265559592/image.png">
-<p align="center"> Theme 1 Desktop </p>
+<p align="center"> Desktop </p>
 </div>
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/1010370602516877386/1057070007030399117/image.png">
-<p align="center"> Theme 2 Desktop </p>
+<p align="center"> Mobile </p>
 </div>
 
 ### Links
