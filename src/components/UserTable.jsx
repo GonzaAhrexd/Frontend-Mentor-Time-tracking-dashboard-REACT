@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/index.css'
 function UserTable(props) {
 
+
  
   return (
  
@@ -11,11 +12,13 @@ function UserTable(props) {
     <div className='imageContainer'>
     <img className='imagen' src={props.img} alt="" />
     </div>
+    <div> 
     <div className='rep'>
       Report  for
     </div>
     <div className='name'>
       {props.name}
+      </div>
     </div>
     </div>
     </div>

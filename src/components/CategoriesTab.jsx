@@ -7,10 +7,15 @@ function CategoriesTab(props) {
     const Tarjetitas = styled.div
     `
     background-color: ${props.dato.color};
-    height: 90%;
+    height: 85%;
     width: 85%;
     // background-color: hsl(235, 46%, 20%);
     border-radius: 20px;
+
+    @media (max-width: 638px) {
+        width: 95%;
+      }
+
     `
     
     const Decoration = styled.div`
@@ -37,14 +42,10 @@ function CategoriesTab(props) {
         showPrevious = props.dato.timeframes.monthly.previous
     }
 
-    console.log(showPrevious)
+
     return (
 
-       
         <Tarjetitas> 
-
-            {/* <div className='Datos'> */}
-
             <Decoration>
                 <div>
                     <img className="imagenDeco" src={`./images/icon-${(props.dato.title).toLowerCase()}.svg`} alt="" /> </div>
@@ -60,6 +61,7 @@ function CategoriesTab(props) {
                             <img src="./images/icon-ellipsis.svg" alt="" />
                         </div>
                     </div>
+                    <div className='hourandlast'> 
                     <div className='hours'>
                         {showCurrent}hrs
                     </div>
@@ -67,12 +69,9 @@ function CategoriesTab(props) {
 
                         Last-week - {showPrevious}hrs
                     </div>
-                   
+                    </div>
                 </div>
 
-
-         
-        {/* </div> */}
 
         </Tarjetitas>
     )

@@ -5,6 +5,10 @@ html, body {
   background-color: hsl(226, 43%, 10%);
 }
 
+#weekly{
+  color:white;
+}
+
 .container{
   margin: 0 auto;
   height: 95.1vh;
@@ -25,19 +29,18 @@ html, body {
 .UserComplete{
   background-color: hsl(235, 46%, 20%);
   height: 96%;
-  width: 15.625rem;
+  width: 19.625rem;
   border-radius: 20px;
 
 }
 
 .username{
-  background-color: hsl(235, 45%, 61%);
+  background-color: hsl(246, 80%, 60%);
   height: 66%;
   border-radius: 20px;
 }
 .imagen{
   margin-top: 20px;
-  /* width: 70px; */
   width: 10vh;
   border: 5px solid;
   border-radius: 7vh;
@@ -132,7 +135,7 @@ html, body {
 
 .hours{
   font-family: 'Rubik', sans-serif;
-  font-size: 4vw;
+  font-size: 3.1vw;
 
 }
 .lasthours{
